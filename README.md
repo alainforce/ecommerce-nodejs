@@ -53,32 +53,7 @@ ecommerce-backend/
 
 
 
-Client (Frontend)
-   ↓
-API Gateway / Load Balancer (NGINX, AWS API Gateway)
-   ↓
-Backend (App Server)
-   ├── Controllers (Route Handlers)
-   ├── Services (Business Logic)
-   ├── Repositories (Data Access Layer)
-   └── Models (DB Schemas)
-   ↓
-Database (PostgreSQL / MongoDB)
 
 
-3. Database Schema (Relational)
-Users (id, name, email, password_hash, role, created_at)
 
-Products (id, title, description, price, stock, category_id)
 
-Categories (id, name, parent_id)
-
-CartItems (id, user_id, product_id, quantity)
-
-Orders (id, user_id, status, total_price, created_at)
-
-OrderItems (id, order_id, product_id, quantity, price)
-
-Payments (id, order_id, status, payment_method, payment_reference)
-
-ShippingInfo (id, order_id, address, delivery_date, status)
